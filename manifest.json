@@ -1,0 +1,24 @@
+{
+  "name": "chatwork friends",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "あなたはしゃちくのフレンズなんだね！",
+  "icons": {
+    "16": "images/cat.svg",
+    "128": "images/cat.svg"
+  },
+  "content_scripts": [{
+    "matches": [
+      "https://www.chatwork.com/*",
+      "https://kcw.kddi.ne.jp/*"
+    ],
+    "js": [
+      "scripts/lib/jquery-2.2.2.min.js",
+      "scripts/friends.js"
+    ]
+  }],
+  "permissions": [],
+  "web_accessible_resources": [
+    "images/*"
+  ]
+}
