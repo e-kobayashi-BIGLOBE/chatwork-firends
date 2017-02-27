@@ -7,7 +7,7 @@ function putButton(iconWrapper) {
 
 function sendChat() {
   // チャットを投稿する
-  var ary = ['すごーい！','たのしー！','かりごっこだね！','わーい！','おっもしろーい！','やったー！'];
+  var ary = ['すごーい！','たーのしー！','わーい！','おっもしろーい！','やったー！'];
   var random = ary[Math.floor(Math.random() * ary.length)];
 
   $('#_chatText').val(random);
