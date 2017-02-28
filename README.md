@@ -1,4 +1,4 @@
-# chatwork-firends
+# chatwork-friends
 ようこそジャパリパークへ
 
 ##install
