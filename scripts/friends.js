@@ -8,7 +8,7 @@ function putButton(iconWrapper) {
 // カタカナの単語をランダムに取得する。なかったらnullを返す。
 function getKatakanaWord() {
   var rid = location.hash.split('rid')[1];
-  var list = document.querySelectorAll(`[data-rid="${rid}"] pre`);
+  var list = document.querySelectorAll(`#_timeLine [data-rid="${rid}"] pre`);
   var lastText = list[list.length - 1].innerText;
   var katakanaWordList = lastText.split(/[^\u30A0-\u30FF]/).filter(v => v.length > 1)
   var katakanaWord = null;
