@@ -35,14 +35,17 @@ function create(label, imageFileName) {
   icon.setAttribute('height', '20');
 
   var iconWrapper = document.createElement('li');
+  iconWrapper.classList.add('list'); //
   iconWrapper.setAttribute('class', 'sugoi_button _showDescription');
   iconWrapper.setAttribute('style', 'display: inline-block; padding-left: 2px;');
   iconWrapper.setAttribute('role', 'button');
   iconWrapper.setAttribute('aria-label', label);
+  iconWrapper.setAttribute('id', 'serval-chan'); //
   iconWrapper.appendChild(icon);
   return iconWrapper;
 }
 
 var replaceButton = create('すごーい！', 'cat.svg');
 
-putButton(replaceButton)
+// ゆっくり読み込む
+setTimeout(function(){putButton(replaceButton)}, 2000);
